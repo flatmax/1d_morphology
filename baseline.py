@@ -3,11 +3,9 @@ import numpy as np
 try:
     from .opening import opening
     from .closing import closing
-    from .structfunct import structfunct
 except ImportError:
     from opening import opening
     from closing import closing
-    from structfunct import structfunct
 
 
 def baseline(f, g=None):
@@ -19,6 +17,10 @@ def baseline(f, g=None):
     Ref: Morphology.lyx, May 2020
     """
     if g is None:
+        try:
+            from .structfunct import structfunct
+        except ImportError:
+            from structfunct import structfunct
         g = structfunct(11, 'quad')
     
     f = np.asarray(f).flatten()
