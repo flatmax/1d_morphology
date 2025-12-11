@@ -1,7 +1,13 @@
 import numpy as np
-from opening import opening
-from closing import closing
-from structfunct import structfunct
+
+try:
+    from .opening import opening
+    from .closing import closing
+    from .structfunct import structfunct
+except ImportError:
+    from opening import opening
+    from closing import closing
+    from structfunct import structfunct
 
 
 def baseline(f, g=None):

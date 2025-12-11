@@ -1,6 +1,11 @@
 import numpy as np
-from dilation import dilation
-from erosion import erosion
+
+try:
+    from .dilation import dilation
+    from .erosion import erosion
+except ImportError:
+    from dilation import dilation
+    from erosion import erosion
 
 
 def closing(f, g):

@@ -17,3 +17,6 @@ dependencies = [
 dev = [
     "pytest",
 ]
+
+[tool.setuptools]
+py-modules = ["baseline", "closing", "dilation", "erosion", "opening", "structfunct"]
