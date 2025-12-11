@@ -19,16 +19,17 @@ def dilation(f, g):
     
     N = len(f)
     B = len(g)
-    Bhalf = (B - 1) // 2
-    
-    if B % 2 == 0:
-        raise ValueError('Length of structuring element must be an odd number')
+    Bhalf = B // 2
     
     if (B == 1) or (np.max(g) == np.min(g)):
         # use set definitions
-        dil = maximum_filter1d(f, size=B, mode='nearest')
+        # origin=0 centers the filter at index B//2
+        dil = maximum_filter1d(f, size=B, mode='nearest', origin=0)
     else:
         # use function definitions
+        if B % 2 == 0:
+            raise ValueError('Length of structuring element must be an odd number for function definitions')
+        Bhalf = (B - 1) // 2
         dil = np.zeros(N)
         for n in range(N):
             if n < Bhalf:

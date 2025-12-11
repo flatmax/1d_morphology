@@ -29,9 +29,6 @@ def baseline(f, g=None):
         g = structfunct(11, 'quad')
     elif isinstance(g, (int, np.integer)):
         # If g is an integer, create a flat structuring element of that length
-        # Ensure it's odd
-        if g % 2 == 0:
-            g = g + 1
         g = np.zeros(g)
     
     f = np.asarray(f).flatten()
