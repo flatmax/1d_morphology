@@ -7,6 +7,7 @@ name = "morphology"
 version = "0.1.0"
 description = "Morphological operations for signal processing"
 readme = "README.md"
+license = "MIT"
 requires-python = ">=3.8"
 dependencies = [
     "numpy",
@@ -18,6 +19,11 @@ dependencies = [
 dev = [
     "pytest",
 ]
+
+[project.urls]
+Homepage = "https://github.com/flatmax/1d_morphology"
+Repository = "https://github.com/flatmax/1d_morphology"
+Issues = "https://github.com/flatmax/1d_morphology/issues"
 
 [tool.setuptools]
 py-modules = ["baseline", "closing", "dilation", "erosion", "opening", "structfunct"]

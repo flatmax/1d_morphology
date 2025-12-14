@@ -12,6 +12,20 @@ This library provides implementations of fundamental morphological operations:
 - **Opening** - Morphological opening (erosion followed by dilation)
 - **Closing** - Morphological closing (dilation followed by erosion)
 
+## Installation
+
+```bash
+pip install git+https://github.com/flatmax/1d_morphology.git
+```
+
+Or clone the repository and install locally:
+
+```bash
+git clone https://github.com/flatmax/1d_morphology.git
+cd 1d_morphology
+pip install -e .
+```
+
 ## Reference
 
 This code is based on the following unpublished work:
@@ -31,3 +45,7 @@ See `Morphology.pdf` for the full document.
   note   = {Unpublished manuscript}
 }
 ```
+
+## License
+
+MIT License - see [LICENSE](LICENSE) for details.
