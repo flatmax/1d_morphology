@@ -21,12 +21,13 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/flatmax/1d_morphology"
-Repository = "https://github.com/flatmax/1d_morphology"
-Issues = "https://github.com/flatmax/1d_morphology/issues"
+Homepage = "https://github.com/flatmax/morphology_1d"
+Repository = "https://github.com/flatmax/morphology_1d"
+Issues = "https://github.com/flatmax/morphology_1d/issues"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
+include = ["morphology_1d*"]
 
 [tool.setuptools.package-data]
 "*" = ["*.pdf"]

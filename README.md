@@ -15,14 +15,14 @@ This library provides implementations of fundamental morphological operations:
 ## Installation
 
 ```bash
-pip install git+https://github.com/flatmax/1d_morphology.git
+pip install git+https://github.com/flatmax/morphology_1d.git
 ```
 
 Or clone the repository and install locally:
 
 ```bash
-git clone https://github.com/flatmax/1d_morphology.git
-cd 1d_morphology
+git clone https://github.com/flatmax/morphology_1d.git
+cd morphology_1d
 pip install -e .
 ```
 
