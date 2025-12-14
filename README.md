@@ -29,7 +29,7 @@ pip install -e .
 ## Usage
 
 ```python
-from 1d_morphology import baseline, dilation, erosion, opening, closing
+from morphology_1d import baseline, dilation, erosion, opening, closing
 ```
 
 ## Reference
