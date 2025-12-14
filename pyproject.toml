@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "morphology"
+name = "1d_morphology"
 version = "0.1.0"
-description = "Morphological operations for signal processing"
+description = "Simple morphological filters in one dimension"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.8"
